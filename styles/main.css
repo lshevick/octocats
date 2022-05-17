@@ -1,0 +1,114 @@
+@import url(https://blogfonts.com/css/aWQ9MTUyOTE4JnN1Yj05MTgmYz1hJnR0Zj1EZWdhcmlzbStTdHVkaW8rLStBbGxpYW5jZStOby4xK0xpZ2h0Lm90ZiZuPWFsbGlhbmNlLW5vMQ/Alliance_No.1.otf);
+
+.octodex {
+    font-family: 'Alliance No 1', sans-serif;
+    text-align:center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.octodex::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.octocat {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    top: 20%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.octocat>a {
+    position:relative;
+    padding-top: 100%;
+    cursor: pointer;
+}
+
+.octocat>a>img {
+    border: 1px solid #C3C3C3;
+    border-radius: 3px;
+    position: relative;
+    width: 100%;
+}
+
+.octocat > a::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 99%;
+    right: 9px;
+    border-top: 8px solid #C3C3C3;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+}
+
+.image-footer {
+    text-align: right;
+    display: table;
+    position: relative;
+    padding: 8px;
+    border-bottom: 1px solid #C3C3C3;
+    width: 100%;
+}
+
+.image-number {
+    display: table-cell;
+    vertical-align: middle;
+    color: #C3C3C3;
+    font-weight: bold;
+    text-align: start;
+}
+
+.image-number::before {
+    content: '#';
+}
+
+.image-caption {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    color: #6C6C6C;
+    font-weight: bold;
+}
+
+
+.image-caption a {
+    color: #2D2D2D;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.image-caption span, .image-caption span + :any-link {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+}
+
+.authors {
+    display: table-cell;
+    vertical-align: middle;
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 2.4rem;
+}
+
+.authors a:first-child {
+    padding-left: 10px;
+}
+
+.authors a {
+    padding-top: 5%;
+}
+
+.authors a>img {
+    width: 2em;
+    border-radius: 3px;
+}
