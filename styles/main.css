@@ -1,11 +1,19 @@
 @import url(https://blogfonts.com/css/aWQ9MTUyOTE4JnN1Yj05MTgmYz1hJnR0Zj1EZWdhcmlzbStTdHVkaW8rLStBbGxpYW5jZStOby4xK0xpZ2h0Lm90ZiZuPWFsbGlhbmNlLW5vMQ/Alliance_No.1.otf);
 
+
+body {
+    overflow-x: hidden;
+}
+
 .octodex {
     font-family: 'Alliance No 1', sans-serif;
     text-align:center;
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 96vw;
+    height: 96vh;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .octodex::after {
@@ -42,7 +50,7 @@
     height: 0;
     position: absolute;
     top: 99%;
-    right: 9px;
+    right: 3px;
     border-top: 8px solid #C3C3C3;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
@@ -75,6 +83,7 @@
     vertical-align: middle;
     color: #6C6C6C;
     font-weight: bold;
+    right: 1px;
 }
 
 
